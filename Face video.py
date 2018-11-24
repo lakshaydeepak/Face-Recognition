@@ -9,6 +9,8 @@ while True:
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
     for (x,y,w,h) in faces:
         print(x,y,w,h)
+        
+        
     # Displaying the resultant frame
     cv2.imshow('frame',frame)
     if cv2.waitKey(20) & 0xFF == ord('q'):
